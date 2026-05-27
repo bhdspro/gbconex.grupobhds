@@ -43,27 +43,32 @@
     </script>
     <style>
         body { background-color: #FEF7FF; }
-        /* M3 Typography Scale Utilities */
-        .m3-headline-lg { font-size: 2.5rem; line-height: 3rem; font-weight: 700; letter-spacing: -0.05em; }
-        .m3-title-lg { font-size: 1.375rem; line-height: 1.75rem; font-weight: 500; }
-        .m3-body-lg { font-size: 1.125rem; line-height: 1.75rem; font-weight: 400; letter-spacing: 0.01em; }
+        /* M3 Typography Scale Utilities - Mobile First */
+        .m3-headline-lg { font-size: 2rem; line-height: 2.5rem; font-weight: 700; letter-spacing: -0.05em; }
+        @media (min-width: 768px) { .m3-headline-lg { font-size: 2.5rem; line-height: 3rem; } }
+        
+        .m3-title-lg { font-size: 1.25rem; line-height: 1.75rem; font-weight: 500; }
+        @media (min-width: 768px) { .m3-title-lg { font-size: 1.375rem; line-height: 1.75rem; } }
+        
+        .m3-body-lg { font-size: 1rem; line-height: 1.625rem; font-weight: 400; letter-spacing: 0.01em; }
+        @media (min-width: 768px) { .m3-body-lg { font-size: 1.125rem; line-height: 1.75rem; } }
     </style>
 </head>
 
 <body class="text-m3-onSurface antialiased min-h-screen flex flex-col">
     
     <header class="w-full py-8 px-6 flex flex-col items-center justify-center">
-        <!-- Logo -->
-        <a href="https://gbconex.grupobhds.com/logo.png" title="Página Inicial do GBConex">
-            <img src="GBConex - Logo.png" alt="Logo GBConex" class="w-40 md:w-48 object-contain transition-transform hover:scale-105 duration-300">
+        <!-- Logo com URL Absoluta -->
+        <a href="https://gbconex.grupobhds.com" title="Página Inicial do GBConex">
+            <img src="https://gbconex.grupobhds.com/logo.png" alt="Logo GBConex" class="w-36 md:w-48 object-contain transition-transform hover:scale-105 duration-300">
         </a>
     </header>
 
     <main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 mb-12">
-        <!-- M3 Card Container -->
-        <article class="bg-white rounded-[32px] shadow-sm border border-m3-surfaceVariant p-8 md:p-14">
+        <!-- M3 Card Container (Ajustado para perfeito encaixe em mobile) -->
+        <article class="bg-white rounded-[24px] md:rounded-[32px] shadow-sm border border-m3-surfaceVariant p-6 sm:p-8 md:p-14">
             
-            <header class="mb-10 text-center">
+            <header class="mb-8 md:mb-10 text-center">
                 <h1 class="m3-headline-lg text-m3-primary mb-4">Política de Privacidade</h1>
                 <p class="text-m3-onSurfaceVariant font-medium">Última atualização: 27 de Maio de 2026</p>
             </header>
