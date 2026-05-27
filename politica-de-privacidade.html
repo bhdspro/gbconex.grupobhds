@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | GBConex - Grupo BHDS</title>
+    
+    <!-- SEO & Silo Strategy -->
+    <meta name="description" content="Política de Privacidade do GBConex, plataforma do Grupo BHDS. Saiba como protegemos os dados da sua empresa em conformidade com a LGPD.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gbconex.grupobhds.com/politica-de-privacidade" />
+    
+    <!-- Material 3 Expressive Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS with M3 Expressive Customization -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        m3: {
+                            primary: '#6750A4',
+                            onPrimary: '#FFFFFF',
+                            primaryContainer: '#EADDFF',
+                            onPrimaryContainer: '#21005D',
+                            surface: '#FEF7FF',
+                            onSurface: '#1D1B20',
+                            surfaceVariant: '#E7E0EC',
+                            onSurfaceVariant: '#49454F',
+                            outline: '#79747E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FEF7FF; }
+        /* M3 Typography Scale Utilities */
+        .m3-headline-lg { font-size: 2.5rem; line-height: 3rem; font-weight: 700; letter-spacing: -0.05em; }
+        .m3-title-lg { font-size: 1.375rem; line-height: 1.75rem; font-weight: 500; }
+        .m3-body-lg { font-size: 1.125rem; line-height: 1.75rem; font-weight: 400; letter-spacing: 0.01em; }
+    </style>
+</head>
+
+<body class="text-m3-onSurface antialiased min-h-screen flex flex-col">
+    
+    <header class="w-full py-8 px-6 flex flex-col items-center justify-center">
+        <!-- Logo -->
+        <a href="https://gbconex.grupobhds.com" title="Página Inicial do GBConex">
+            <img src="GBConex - Logo.png" alt="Logo GBConex" class="w-40 md:w-48 object-contain transition-transform hover:scale-105 duration-300">
+        </a>
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 mb-12">
+        <!-- M3 Card Container -->
+        <article class="bg-white rounded-[32px] shadow-sm border border-m3-surfaceVariant p-8 md:p-14">
+            
+            <header class="mb-10 text-center">
+                <h1 class="m3-headline-lg text-m3-primary mb-4">Política de Privacidade</h1>
+                <p class="text-m3-onSurfaceVariant font-medium">Última atualização: 27 de Maio de 2026</p>
+            </header>
+
+            <div class="m3-body-lg text-m3-onSurfaceVariant space-y-6">
+                <p>
+                    A sua privacidade é fundamental para o <strong>GBConex</strong>, uma solução empresarial mantida e operada pelo 
+                    <a href="https://grupobhds.com" target="_blank" class="text-m3-primary font-medium hover:underline">Grupo BHDS</a>. 
+                    Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos os seus dados, em total conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018)</strong>.
+                </p>
+
+                <section class="mt-8">
+                    <h2 class="m3-title-lg text-m3-onSurface mb-3">1. Dados Coletados</h2>
+                    <p class="mb-3">Para fornecer nossos serviços de sincronização de redes sociais de forma automática (através do domínio <a href="https://gbconex.grupobhds.com" class="text-m3-primary hover:underline">gbconex.grupobhds.com</a>), o GBConex coleta de forma restrita:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Tokens de Acesso (Chaves de API):</strong> Tokens gerados via OAuth que dão permissão ao sistema para "ler" o Instagram e "publicar" no Google Meu Negócio. <em>Nenhuma senha pessoal é capturada ou armazenada pelo Grupo BHDS.</em></li>
+                        <li><strong>Identificadores:</strong> IDs numéricos ou nomes de usuário das contas conectadas.</li>
+                        <li><strong>Conteúdo Temporário:</strong> Durante a sincronização, o sistema processa temporariamente fotos e legendas recentes.</li>
+                    </ul>
+                </section>
+
+                <section class="mt-8">
+                    <h2 class="m3-title-lg text-m3-onSurface mb-3">2. Uso e Compartilhamento de Dados</h2>
+                    <p><strong>O Grupo BHDS não vende, não aluga e não cede seus dados a terceiros sob nenhuma hipótese.</strong></p>
+                    <p class="mt-3">Os dados coletados são utilizados estritamente para executar a rotina de automação contratada. O único compartilhamento de dados ocorre de forma criptografada entre nossa infraestrutura e as APIs oficiais da Meta e do Google.</p>
+                </section>
+
+                <section class="mt-8">
+                    <h2 class="m3-title-lg text-m3-onSurface mb-3">3. Armazenamento e Segurança (Cloudflare KV)</h2>
+                    <p>Nossa infraestrutura tecnológica utiliza o <em>Cloudflare KV</em> e variáveis de ambiente (Environment Variables) criptografadas nativamente. Não armazenamos o histórico de fotos ou legendas da sua empresa em bancos de dados de longo prazo; mantemos apenas o ID numérico da postagem por 7 dias como mecanismo de controle <em>anti-duplicidade</em>.</p>
+                </section>
+
+                <section class="mt-8">
+                    <h2 class="m3-title-lg text-m3-onSurface mb-3">4. Seus Direitos (LGPD)</h2>
+                    <p>Em conformidade com a legislação brasileira de proteção de dados, você possui o direito de:</p>
+                    <ul class="list-disc pl-6 mt-2 space-y-2">
+                        <li>Solicitar a exclusão imediata de todos os tokens e IDs atrelados à sua empresa de nossos servidores.</li>
+                        <li>Revogar o acesso diretamente pelos painéis de segurança da sua conta Google ou Facebook/Instagram.</li>
+                    </ul>
+                </section>
+                
+            </div>
+            
+            <div class="mt-12 flex justify-center">
+                <a href="https://gbconex.grupobhds.com" class="bg-m3-primaryContainer text-m3-onPrimaryContainer font-medium py-3 px-8 rounded-full hover:bg-[#d0bcff] transition-colors duration-200 shadow-sm flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Voltar para o GBConex
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="w-full py-8 text-center text-m3-onSurfaceVariant text-sm border-t border-m3-surfaceVariant mt-auto">
+        <p>&copy; 2026 <strong>GBConex</strong>. Um serviço do <a href="https://grupobhds.com" class="font-medium hover:text-m3-primary transition-colors">Grupo BHDS</a>.</p>
+        <div class="mt-2 space-x-4">
+            <a href="https://gbconex.grupobhds.com/termos-de-uso" class="hover:text-m3-primary transition-colors">Termos de Uso</a>
+            <span>&bull;</span>
+            <a href="https://gbconex.grupobhds.com" class="hover:text-m3-primary transition-colors">Site Oficial</a>
+        </div>
+    </footer>
+
+</body>
+</html>
